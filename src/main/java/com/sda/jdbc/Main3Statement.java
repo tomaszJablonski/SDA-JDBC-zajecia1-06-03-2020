@@ -47,6 +47,7 @@ public class Main3Statement {
         System.out.println("truncateTableAnimal = " + truncateTableAnimal);
         executeStatement.close();
 
+
         connection.close();
 
 

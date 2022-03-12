@@ -10,7 +10,8 @@ public class Main4StatementExercise {
             Connection connection = DriverManager.getConnection(URL, ROOT, PASSWORD);
 
             Statement initialStatement = connection.createStatement();
-            initialStatement.execute("CREATE TABLE IF NOT EXISTS user1(" +
+            initialStatement.execute("" +
+                    "CREATE TABLE IF NOT EXISTS user1(" +
                     "id BIGINT NOT NULL AUTO_INCREMENT," +
                     "username VARCHAR (50) UNIQUE," +
                     "password VARCHAR (50)," +
@@ -19,7 +20,8 @@ public class Main4StatementExercise {
             initialStatement.close();
 
             Statement insertStatement = connection.createStatement();
-            insertStatement.executeUpdate("INSERT INTO user1 (username,password) VALUES " +
+            insertStatement.executeUpdate("" +
+                    "INSERT INTO user1 (username,password) VALUES " +
                     "('jan','sdfsdf')," +
                     "('Roman','sdf4334')," +
                     "('Harry','435dfg')");
